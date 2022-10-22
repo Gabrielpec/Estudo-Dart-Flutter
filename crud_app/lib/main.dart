@@ -1,26 +1,8 @@
 import 'package:flutter/material.dart';
 
-//Const is a Keyword, data type for constants values, who can't be change
-const age = 20; //If you try change it, will give an error
-
-String getFullName(String firstName, String lastName) {
-  return "$firstName $lastName";
-  //Using (return firstName + ' ' + lastName) is very old-fashioned
+void main() {
+  runApp(const MyApp());
 }
-
-void printMe(String firstName) => print("I'm $firstName and i have $age years");
-
-void main() => runApp(const MyApp());
-
-//Final means constant, but it's a good practice putting const instead of final
-//final name = 'Foo';
-var name = 'Foo';
-//Var instead of data type like int or string can represent a dynamic var
-
-/*
-    dynamic is... hmmm... something dynamic? :) literally, this means that you don't need declare a
-    value type, it self-insert
-  */
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -28,8 +10,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    print(getFullName('Foo', 'Bar'));
-    printMe("Gabe");
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
