@@ -64,6 +64,10 @@ Main no inglês significa Principal.
     >    print("Isso é falso")<br/>
     >}
 
+7. Importando bibliotecas, No escopo do projeto (nas primeiras no caso) você deve inserir import: 'caminho/biblioteca';
+
+8. Convertendo valores: tipo.parse(variável)
+
 ------------------------------------------------
 
 <br/>
@@ -81,6 +85,8 @@ Main no inglês significa Principal.
 | < | Compara se o esquerrdo é menor do que o direito 4 < 5|
 | ?? | Os dois pontos de interrogação tem como finalidade retornar um outro resultado caso um valor seja nulo. <br/>`return a1 + (a2 ?? 1);` <br/>Se a2 for nulo, irá retornar 1 |
 | void | O void é inserido em classes que não irão retornar nenhum valor, ou, não recebem a declaração **return**, no caso do Dart, o void pode ser deixado de lado caso a função seja dinâmica. |
+| STDIN | fluxo para entrada de valores |
+| Parse | Função que converte tipo das variáveis, por exemplo: ``int.parse(idade)`` |
 
 ____________________________________________
 <br/><br/>
